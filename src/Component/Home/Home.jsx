@@ -5,7 +5,7 @@ const Home = () => {
   const [allCourses, setAllCourses] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
-  const [totalCreditRemaining, setTotalCreditRemaining] = useState(0);
+  const [totalCreditRemaining, setTotalCreditRemaining] = useState(20);
 
   useEffect(() => {
     fetch("./data.json")
@@ -39,27 +39,40 @@ const Home = () => {
   console.log(totalCreditRemaining);
   return (
     <div className="container mx-auto mt-12">
-      <h1>Hello World!</h1>
+      <h1 className="text-3xl font-bold text-center my-12">
+        Course Registration
+      </h1>
       {/* main container */}
-      <div className="flex justify-evenly gap-6">
+      <div className="flex flex-grow justify-center gap-6">
         {/* card container */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {allCourses.map((course) => (
-            <div key={course.id} className="card bg-base-100 shadow-xl">
+            <div
+              key={course.id}
+              className="w-[300px] bg-base-100 shadow-xl rounded-lg"
+            >
               <figure>
-                <img src={course.course_img} alt="Shoes" />
+                <img src={course.course_img} alt="images" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">{course.name}</h2>
-                <p>{course.details}</p>
+                <h2 className="text-lg font-semibold">{course.name}</h2>
+                <p className="text-sm font-normal text-[#5f5f5f]">
+                  {course.details}
+                </p>
                 <div className="flex justify-between">
-                  <small>Price: ${course.price}</small>
-                  <small>Credit: {course.credit}hr</small>
+                  <small>
+                    <i className="fa-solid fa-dollar-sign"></i> Price:{" "}
+                    {course.price}
+                  </small>
+                  <small>
+                    <i className="fa-solid fa-book-open"></i> Credit:{" "}
+                    {course.credit}hr
+                  </small>
                 </div>
-                <div className="card-actions">
+                <div className="card-actions justify-center">
                   <button
                     onClick={() => handleSelectCourse(course)}
-                    className="btn btn-wide btn-success"
+                    className="btn-wide bg-[#2F80ED] rounded-md text-white p-2 font-semibold"
                   >
                     Select
                   </button>
