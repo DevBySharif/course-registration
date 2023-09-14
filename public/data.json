@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "course_img": "https://ibb.co/tZXVvP3",
+    "name": "Introduction to C Programming",
+    "details": "Learn the fundamentals of the C programming language in this comprehensive course. Master the syntax, data structures, and key concepts.",
+    "price": 15000,
+    "credit": 1
+  },
+  {
+    "id": 2,
+    "course_img": "https://ibb.co/mXKXWq1",
+    "name": "Introduction to Algorithms",
+    "details": "Dive into the world of algorithms and problem-solving. Understand algorithmic thinking and analysis to tackle complex challenges.",
+    "price": 25000,
+    "credit": 2
+  },
+  {
+    "id": 3,
+    "course_img": "https://ibb.co/chmrkhD",
+    "name": "Introduction to C++ for DSA",
+    "details": "Explore the power of C++ for data structures and algorithms. Build efficient and scalable solutions for real-world problems.",
+    "price": 10000,
+    "credit": 10
+  },
+  {
+    "id": 4,
+    "course_img": "https://ibb.co/QvnT5Tk",
+    "name": "Basic Data Structures",
+    "details": "Master the foundational data structures that form the basis of software development. Enhance your problem-solving skills.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 5,
+    "course_img": "https://ibb.co/6B4wHH6",
+    "name": "Introduction to OOP Python",
+    "details": "Discover object-oriented programming in Python. Learn to design and create reusable code using OOP principles.",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 6,
+    "course_img": "https://ibb.co/fCJSqHq",
+    "name": "Software Engineering",
+    "details": "Become a software engineering expert. Develop large-scale software systems and gain insights into best practices.",
+    "price": 23000,
+    "credit": 2
+  },
+  {
+    "id": 7,
+    "course_img": "https://ibb.co/Qvy4zGt",
+    "name": "AWS, Cloud Computing",
+    "details": "Harness the power of AWS and cloud computing. Deploy scalable applications and manage cloud resources efficiently.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 8,
+    "course_img": "https://ibb.co/n7Tsv84",
+    "name": "Database (MySQL)",
+    "details": "Explore the world of relational databases with MySQL. Learn database design, querying, and optimization.",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 9,
+    "course_img": "https://ibb.co/XkBQxTc",
+    "name": "Problem-Solving Part",
+    "details": "Sharpen your problem-solving skills in various domains. Tackle complex issues with structured and creative approaches.",
+    "price": 23000,
+    "credit": 2
+  }
+]
