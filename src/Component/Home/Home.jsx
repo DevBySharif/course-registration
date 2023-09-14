@@ -3,21 +3,39 @@ import Cart from "../Cart/Cart";
 
 const Home = () => {
   const [allCourses, setAllCourses] = useState([]);
+  const [selectedCourse, setSelectedCourse] = useState([]);
+
   useEffect(() => {
     fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setAllCourses(data));
   }, []);
-  console.log(allCourses);
+
+  const handleSelectCourse = (course) => {
+    const isExist = selectedCourse.find((item) => item.id == course.id);
+
+    let count = course.credit;
+    if (isExist) {
+      return alert("Course already selected");
+    } else {
+      selectedCourse.forEach((item) => {
+        count = count + item.credit;
+      });
+    }
+    console.log(count);
+    setSelectedCourse([...selectedCourse, course]);
+  };
+  console.log(selectedCourse);
+
   return (
     <div className="container mx-auto mt-12">
       <h1>Hello World!</h1>
       {/* main container */}
-      <div className="flex justify-between">
+      <div className="flex justify-evenly gap-6">
         {/* card container */}
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 gap-6">
           {allCourses.map((course) => (
-            <div key={course.id} className="card w-96 bg-base-100 shadow-xl">
+            <div key={course.id} className="card bg-base-100 shadow-xl">
               <figure>
                 <img src={course.course_img} alt="Shoes" />
               </figure>
@@ -29,7 +47,12 @@ const Home = () => {
                   <small>Credit: {course.credit}hr</small>
                 </div>
                 <div className="card-actions">
-                  <button className="btn btn-wide btn-success">Select</button>
+                  <button
+                    onClick={() => handleSelectCourse(course)}
+                    className="btn btn-wide btn-success"
+                  >
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -37,7 +60,7 @@ const Home = () => {
         </div>
         {/* cart container */}
         <div>
-          <Cart></Cart>
+          <Cart selectedCourse={selectedCourse}></Cart>
         </div>
       </div>
     </div>
