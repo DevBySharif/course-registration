@@ -4,6 +4,8 @@ import Cart from "../Cart/Cart";
 const Home = () => {
   const [allCourses, setAllCourses] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([]);
+  const [totalCredit, setTotalCredit] = useState(0);
+  const [totalCreditRemaining, setTotalCreditRemaining] = useState(0);
 
   useEffect(() => {
     fetch("./data.json")
@@ -15,18 +17,26 @@ const Home = () => {
     const isExist = selectedCourse.find((item) => item.id == course.id);
 
     let count = course.credit;
+
     if (isExist) {
       return alert("Course already selected");
     } else {
       selectedCourse.forEach((item) => {
         count = count + item.credit;
       });
-    }
-    console.log(count);
-    setSelectedCourse([...selectedCourse, course]);
-  };
-  console.log(selectedCourse);
 
+      const totalRemainingCredit = 20 - count;
+
+      if (count > 20) {
+        return alert("You can't add more than 20 credit");
+      } else {
+        setTotalCreditRemaining(totalRemainingCredit);
+        setTotalCredit(count);
+        setSelectedCourse([...selectedCourse, course]);
+      }
+    }
+  };
+  console.log(totalCreditRemaining);
   return (
     <div className="container mx-auto mt-12">
       <h1>Hello World!</h1>
@@ -60,7 +70,11 @@ const Home = () => {
         </div>
         {/* cart container */}
         <div>
-          <Cart selectedCourse={selectedCourse}></Cart>
+          <Cart
+            selectedCourse={selectedCourse}
+            totalCredit={totalCredit}
+            totalCreditRemaining={totalCreditRemaining}
+          ></Cart>
         </div>
       </div>
     </div>
