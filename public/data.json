@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "course_img": "https://ibb.co/tZXVvP3",
+    "course_img": "https://i.ibb.co/zrJRg2H/Rectangle-2-2.png",
     "name": "Introduction to C Programming",
     "details": "Learn the fundamentals of the C programming language in this comprehensive course. Master the syntax, data structures, and key concepts.",
     "price": 15000,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "course_img": "https://ibb.co/mXKXWq1",
+    "course_img": "https://i.ibb.co/xj5RWYF/Rectangle-2-3.png",
     "name": "Introduction to Algorithms",
     "details": "Dive into the world of algorithms and problem-solving. Understand algorithmic thinking and analysis to tackle complex challenges.",
     "price": 25000,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "course_img": "https://ibb.co/chmrkhD",
+    "course_img": "https://i.ibb.co/hLZbgqX/Rectangle-2-4.png",
     "name": "Introduction to C++ for DSA",
     "details": "Explore the power of C++ for data structures and algorithms. Build efficient and scalable solutions for real-world problems.",
     "price": 10000,
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "course_img": "https://ibb.co/QvnT5Tk",
+    "course_img": "https://i.ibb.co/0FtF1Bv/Rectangle-3.png",
     "name": "Basic Data Structures",
     "details": "Master the foundational data structures that form the basis of software development. Enhance your problem-solving skills.",
     "price": 35000,
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "course_img": "https://ibb.co/6B4wHH6",
+    "course_img": "https://i.ibb.co/yYFvmFy/Rectangle-2.png",
     "name": "Introduction to OOP Python",
     "details": "Discover object-oriented programming in Python. Learn to design and create reusable code using OOP principles.",
     "price": 19000,
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "course_img": "https://ibb.co/fCJSqHq",
+    "course_img": "https://i.ibb.co/J37B8Zv/Rectangle-2-5.png",
     "name": "Software Engineering",
     "details": "Become a software engineering expert. Develop large-scale software systems and gain insights into best practices.",
     "price": 23000,
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "course_img": "https://ibb.co/Qvy4zGt",
+    "course_img": "https://i.ibb.co/KVc9Gtq/Rectangle-3-1.png",
     "name": "AWS, Cloud Computing",
     "details": "Harness the power of AWS and cloud computing. Deploy scalable applications and manage cloud resources efficiently.",
     "price": 35000,
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "course_img": "https://ibb.co/n7Tsv84",
+    "course_img": "https://i.ibb.co/n0s7NxP/Rectangle-2-1.png",
     "name": "Database (MySQL)",
     "details": "Explore the world of relational databases with MySQL. Learn database design, querying, and optimization.",
     "price": 19000,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "course_img": "https://ibb.co/XkBQxTc",
+    "course_img": "https://i.ibb.co/mXqnbT6/Rectangle-2-6.png",
     "name": "Problem-Solving Part",
     "details": "Sharpen your problem-solving skills in various domains. Tackle complex issues with structured and creative approaches.",
     "price": 23000,

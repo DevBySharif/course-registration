@@ -51,15 +51,15 @@ const Home = () => {
               key={course.id}
               className="w-[300px] bg-base-100 shadow-xl rounded-lg"
             >
-              <figure>
+              <figure className="flex justify-center">
                 <img src={course.course_img} alt="images" />
               </figure>
-              <div className="card-body">
+              <div className="p-3 space-y-3">
                 <h2 className="text-lg font-semibold">{course.name}</h2>
-                <p className="text-sm font-normal text-[#5f5f5f]">
+                <p className="text-sm font-normal text-[#5f5f5f] h-[90px]">
                   {course.details}
                 </p>
-                <div className="flex justify-between">
+                <div className="flex justify-around">
                   <small>
                     <i className="fa-solid fa-dollar-sign"></i> Price:{" "}
                     {course.price}
