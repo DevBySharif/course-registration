@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 const Cart = ({ selectedCourse, totalCredit, totalCreditRemaining }) => {
   console.log(totalCredit, totalCreditRemaining);
   return (
@@ -27,8 +28,8 @@ const Cart = ({ selectedCourse, totalCredit, totalCreditRemaining }) => {
   );
 };
 Cart.propTypes = {
-  selectedCourse: PropTypes.func.isRequired,
-  totalCredit: PropTypes.object,
-  totalCreditRemaining: PropTypes.object,
+  selectedCourse: PropTypes.array,
+  totalCredit: PropTypes.number,
+  totalCreditRemaining: PropTypes.number,
 };
 export default Cart;

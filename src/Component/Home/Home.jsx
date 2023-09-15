@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import Cart from "../Cart/Cart";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
     let count = course.credit;
 
     if (isExist) {
-      return alert("Course already selected");
+      return toast.error("Course already selected");
     } else {
       selectedCourse.forEach((item) => {
         count = count + item.credit;
@@ -28,7 +29,7 @@ const Home = () => {
       const totalRemainingCredit = 20 - count;
 
       if (count > 20) {
-        return alert("You can't add more than 20 credit");
+        return toast.error("You can't add more than 20 credit");
       } else {
         setTotalCreditRemaining(totalRemainingCredit);
         setTotalCredit(count);
